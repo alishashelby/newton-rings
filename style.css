@@ -178,7 +178,6 @@ body {
             box-shadow: 0 2px 4px rgba(41, 128, 185, 0.3);
         }
 
-        /* Animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
