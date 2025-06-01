@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кольца Ньютона</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Кольца Ньютона</h1>
+    <div class="container">
+        <div class="controls">
+            <h2>Параметры</h2>
+            
+            <div class="slider-container">
+                <label for="radius">Радиус кривизны линзы (м):</label>
+                <input type="range" id="radius" min="0.1" max="10" step="0.1" value="1">
+                <span id="radius-value" class="value-display">1.0</span>
+            </div>
+            
+            <div class="slider-container">
+                <label for="wavelength">Длина волны (нм):</label>
+                <input type="range" id="wavelength" min="380" max="780" step="1" value="550">
+                <span id="wavelength-value" class="value-display">550</span>
+            </div>
+            
+            <div class="color-checkbox">
+                <input type="checkbox" id="color-mode" checked>
+                <label for="color-mode">Цветные кольца</label>
+            </div>
+            
+            <button id="reset-btn">Сбросить параметры</button>
+        </div>
+        
+        <div class="visualization">
+            <h2>Визуализация</h2>
+            <canvas id="newton-rings" width="500" height="500"></canvas>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
